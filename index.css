@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Nanum Myeongjo';
-    src: url(/NanumFontSetup_TTF_MYUNGJO/NanumMyeongjoBold.ttf) format('truetype');
+    src: url(/yeonhuidong.Oven/NanumFontSetup_TTF_MYUNGJO/NanumMyeongjoBold.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Nanum Barun Gothic';
-    src: url(/NanumFontSetup_TTF_BARUNGOTHIC/NanumBarunGothic.ttf) format('truetype');
+    src: url(/yeonhuidong.Oven/NanumFontSetup_TTF_BARUNGOTHIC/NanumBarunGothic.ttf) format('truetype');
 }
 
 
@@ -166,7 +166,9 @@ body {
 }
 
 .sns-item > img {
+    height: 27px;
     width: 27px;
+    object-fit:cover;
     border-radius: 15%;
 }
 
