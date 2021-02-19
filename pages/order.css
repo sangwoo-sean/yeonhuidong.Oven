@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'Nanum Myeongjo';
+    src: url(/yeonhuidong.Oven/NanumFontSetup_TTF_MYUNGJO/NanumMyeongjoBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum Barun Gothic';
+    src: url(/yeonhuidong.Oven/NanumFontSetup_TTF_BARUNGOTHIC/NanumBarunGothic.ttf) format('truetype');
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    all: unset;
+    color: unset;
+    cursor: pointer;
+}
+
+body {
+    font-family: Nanum Barun Gothic;
+    display: flex;
+
+}
+
+.body {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 좌측 네비게이션 바 */
+.nav {
+    position: fixed;
+    width: 270px;
+    height: 100%;
+    background-color: #272727;
+    color: white;
+    z-index: 1;
+    display: flex;
+    transform: translateX(-270px);
+    transition: 0.3s;
+}
+
+.active {
+    transform: translateX(0);
+    transition: 0.3s;
+}
+
+.sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-btn {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.close-btn > div {
+    font-size: 40px;
+    padding: 1rem;
+    font-family: sans-serif;
+    font-style: initial;
+    color: #a2a2a2;
+}
+
+.sidebar-menu {
+    font-size: 13px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-menu > li {
+    letter-spacing: 1px;
+    padding: 18px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+
+
+/* 상단 메뉴바 */
+.menu {
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* 햄버거버튼 */
+.menu-left {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.hamburger-button {
+    padding: .6rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.hamburger_line {
+    border-radius: 50px;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+
+
+/* 메뉴바 아이템들*/
+.menu-tab {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.menu-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* SNS */
+.social-network {
+    width: 15%;
+    height: 100%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+.sns-items {
+    display: flex;
+}
+
+.sns-item {
+    padding: 0.25rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sns-item > img {
+    height: 27px;
+    width: 27px;
+    object-fit:cover;
+    border-radius: 15%;
+}
+
+
+
+
+
+/* 메인 화면 */
+.main {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    border-color: black transparent #e4e4e4 transparent;
+}
+
+.mainItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mainItem >.title {
+    margin-top: 2rem;
+    font-size: 33px;
+    font-weight: bolder;
+    font-family:Nanum Myeongjo;
+    padding: .5rem;
+}
+
+.mainItem >.smallTitle {
+    margin-top: 2rem;
+    font-size: 23px;
+    font-weight: bolder;
+    font-family:Nanum Myeongjo;
+    padding: .5rem;
+}
+
+.mainItem >.subtitle {
+    font-size: 20px;
+    font-family:Nanum Myeongjo;
+    padding: .5rem;
+}
+
+
+.mainItem > span {
+    font-size: 14px;
+}    
+
+.mainItem > .main-logo{
+    margin: 10px;
+    width: 9.3rem;
+}
+
+.refundRull {
+    color: #c0392b;
+}
+
+.mainItem6 > .desc, .mainItem7 > .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.desc {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.desc .bold {
+    font-weight: bold;
+}
+
+.desc > span {
+    padding: 5px;
+}
+
+.seperate-line {
+    width: 100%;
+    height: 1px;
+    background-color: #e4e4e4 ;
+
+}
+
+.mainItem > img {
+    width: 28rem;
+    margin-top: 5rem;
+    border-radius: 100%;
+}
+
+.button {
+    border-width: 2px;
+    font-size: 12px;
+    border-style: solid;
+    padding: 0.5rem 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+    transition: 0.3s;
+}
+
+
+
+/* 푸터 */
+footer{
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    word-spacing: 1px;
+}
+
+footer > span {
+    margin: 3px 0;
+}
+
+.footer_img {
+    width: 170px;
+    margin: 1.2rem;
+}
+
+
