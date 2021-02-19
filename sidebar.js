@@ -2,7 +2,6 @@ const sidenav = document.querySelector("nav");
 const body = document.querySelector(".body");
 const openBtn = document.querySelector(".hamburger-button");
 
-
 const SIDEMENUS = [
     "yeonhuidong.Oven",
     "Order cake",
@@ -11,7 +10,15 @@ const SIDEMENUS = [
     "Q&A",
     "1:1 문의",
     "Tart Order"]
-
+// const PAGES = [
+//     "/index.html",
+//     "/pages/order.html",
+//     "/pages/tart.html",
+//     "/pages/bakingClass.html",
+//     "/pages/QNA.html",
+//     "/pages/query.html",
+//     "/pages/tartOrder.html"
+// ]
 
 function createSidebar() {
     const sidebar = document.createElement("div");
@@ -30,7 +37,13 @@ function createSidebar() {
     rest.className = "sidebar-menu";
     for (i = 0; i < SIDEMENUS.length; i++) {
         const menu = document.createElement("li");
-        menu.innerText = SIDEMENUS[i];
+        const link = document.createElement("a");
+        link.innerText = SIDEMENUS[i];
+        link.href = PAGES[i];
+        if (path === PAGES[i]) {
+            link.style.color = "steelblue";
+        }
+        menu.appendChild(link);
         rest.appendChild(menu);
     }
 

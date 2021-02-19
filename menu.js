@@ -1,7 +1,7 @@
 const menuBar = document.querySelector(".menu-tab");
 const hamburgerBtn = document.querySelector(".hamburger-button");
 const SNS = document.querySelector(".social-network");
-
+const path = window.location.pathname;
 
 const MEDIAS = [
     "https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/v1504499304/in36bktetqoapibgeabo.png",
@@ -15,6 +15,16 @@ const MENUS = [
     "Q&A",
     "1:1 문의",
     "Tart Order"]
+const PAGES = [
+    "/index.html",
+    "/pages/order.html",
+    "/pages/tart.html",
+    "/pages/bakingClass.html",
+    "/pages/QNA.html",
+    "/pages/query.html",
+    "/pages/tartOrder.html"
+]
+
 
 function createHamburger() {
     const hamburgerLine1 = document.createElement("div");
@@ -36,6 +46,10 @@ function createMenus() {
         const tab = document.createElement("a");
         li.className = "menu-item";
         tab.innerText = MENUS[i];
+        tab.href = PAGES[i];
+        if (path === PAGES[i]) {
+            tab.style.color = "rgba(0, 0, 0, 0.6)";
+        }
         li.appendChild(tab);
         ul.className = "menu-items";
         ul.appendChild(li);
