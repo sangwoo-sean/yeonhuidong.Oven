@@ -16,7 +16,7 @@ const MENUS = [
     "1:1 문의",
     "Tart Order"]
 const PAGES = [
-    "/index.html",
+    "/home.html",
     "/pages/order.html",
     "/pages/tart.html",
     "/pages/bakingClass.html",
