@@ -16,13 +16,13 @@ const MENUS = [
     "1:1 문의",
     "Tart Order"]
 const PAGES = [
-    "/",
-    "./yeonhuidong.Oven/pages/order.html",
-    "./yeonhuidong.Oven/pages/tart.html",
-    "./yeonhuidong.Oven/pages/bakingClass.html",
-    "./yeonhuidong.Oven/pages/QNA.html",
-    "./yeonhuidong.Oven/pages/query.html",
-    "./yeonhuidong.Oven/pages/tartOrder.html"
+    "../yeonhuidong.Oven/index.html",
+    "../yeonhuidong.Oven/pages/order.html",
+    "../yeonhuidong.Oven/pages/tart.html",
+    "../yeonhuidong.Oven/pages/bakingClass.html",
+    "../yeonhuidong.Oven/pages/QNA.html",
+    "../yeonhuidong.Oven/pages/query.html",
+    "../yeonhuidong.Oven/pages/tartOrder.html"
 ]
 
 
