@@ -195,6 +195,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 2rem 0;
 }
 .mainItem >.title {
     margin-top: 2rem;
@@ -204,16 +205,10 @@ body {
     padding: .5rem;
 }
 
-.mainItem >.smallTitle {
+.mainItem > .subTitle {
     margin-top: 2rem;
-    font-size: 23px;
     font-weight: bolder;
-    font-family:Nanum Myeongjo;
-    padding: .5rem;
-}
-
-.mainItem >.subtitle {
-    font-size: 20px;
+    font-size: 23px;
     font-family:Nanum Myeongjo;
     padding: .5rem;
 }
@@ -223,21 +218,13 @@ body {
     font-size: 14px;
 }    
 
-.mainItem > .main-logo{
+.mainItem > .productImage{
+    width: 100%;
     margin: 10px;
-    width: 9.3rem;
 }
 
 .refundRull {
     color: #c0392b;
-}
-
-.mainItem6 > .desc, .mainItem7 > .desc {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 12px;
-    font-weight: bold;
 }
 
 .desc {
@@ -263,25 +250,11 @@ body {
 
 }
 
-.mainItem > img {
+.productImage > img {
     width: 28rem;
-    margin-top: 5rem;
+    height: 28rem;
+    object-fit: cover;
     border-radius: 100%;
-}
-
-.button {
-    border-width: 2px;
-    font-size: 12px;
-    border-style: solid;
-    padding: 0.5rem 1.2rem;
-    margin-bottom: 4rem;
-}
-
-.button:hover {
-    color: white;
-    background-color: black;
-    border-color: black;
-    transition: 0.3s;
 }
 
 

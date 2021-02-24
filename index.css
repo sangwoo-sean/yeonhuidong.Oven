@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Nanum Myeongjo';
-    src: url(/yeonhuidong.Oven/NanumFontSetup_TTF_MYUNGJO/NanumMyeongjoBold.ttf) format('truetype');
+    src: url(/NanumFontSetup_TTF_MYUNGJO/NanumMyeongjoBold.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Nanum Barun Gothic';
-    src: url(/yeonhuidong.Oven/NanumFontSetup_TTF_BARUNGOTHIC/NanumBarunGothic.ttf) format('truetype');
+    src: url(/NanumFontSetup_TTF_BARUNGOTHIC/NanumBarunGothic.ttf) format('truetype');
 }
 
 
